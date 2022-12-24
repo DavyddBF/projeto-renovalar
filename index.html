@@ -9,57 +9,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="cabecalho">
-        <img src="./assets/img/logo-renovalar.png" alt="Logo RenovaLar" class="cabecalho-logo">
+        <img src="./assets/img/logo-renovalar.png" alt="Logo RenovaLar" class="cabecalho__logo">
 
         <ul class="menu">
-            <li class="menu-item"><a href="#" class="menu-item-link">Home</a></li>
-            <li class="menu-item"><a href="#" class="menu-item-link">Contato</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Contato</a></li>
         </ul>
     </header>
-    <section class="banner">
-        <div class="banner__imagem"></div>
-    </section>
     <section class="sobre">
-        <h2 class="sobre-titulo">Sobre</h2>
-        <p class="sobre-descricao">A <em>Renovalar Pintor</em> em Garopaba oferece serviços de fino acabamento, pintura de madeiras, aplicação de massa corrida, efeitos decorativos e restauração de pintura. Entre em contato conosco e solicite orçamento sem compromisso. Visite nossa página no instagram <a href="https://www.instagram.com/renovalar_sc/">@renovalar_sc</a>.</p>
+        <div class="sobre__informacoes">
+            <h2 class="sobre__titulo">Sobre</h2>
+            <p class="sobre__descricao">A <em>Renovalar Pintor</em> em Garopaba oferece serviços de fino acabamento, pintura de madeiras, aplicação de massa corrida, efeitos decorativos e restauração de pintura. Entre em contato conosco e solicite orçamento sem compromisso. Visite nossa página no instagram <a href="https://www.instagram.com/renovalar_sc/">@renovalar_sc</a>.</p>
+        </div>
+        <div class="sobre__imagens-grid">
+            <img src="./assets/img/recorte.jpg" alt="Recorte preto fosco no meio do ripado" class="sobre__imagem">
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Nossos trabalhos</h2>
+
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/img/slide/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/img/slide/3.jpg" alt=""></div>    
+                <div class="swiper-slide"><img src="./assets/img/slide/4.jpg" alt=""></div>    
+                <div class="swiper-slide"><img src="./assets/img/slide/5.jpg" alt=""></div>    
+            </div>
+        
+            <!-- Botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
     <section class="orcamento">
         <div>
-            <h2 class="orcamento-titulo" role="button"><a href="#">Peça seu orçamento</a></h2>
+            <h2 class="orcamento__titulo" role="button"><a href="#">Peça seu orçamento</a></h2>
         </div>
     </section>
-    <section class="">
-        <div class="container">
-            <div class="arrow-left control" aria-label="Previous image">◀</div>
-            <div class="arrow-right control" aria-label="Next Image">▶</div>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <!--       <div class="item current-item cyan"></div>
-                <div class="item deeppink"></div>
-                <div class="item turquoise"></div>
-                <div class="item darkblue"></div>
-                <div class="item purple"></div> -->
-                <img src="./assets/img/slide/0.jpg" class="item current-item">
-                <img src="./assets/img/slide/1.jpg" class="item current-item">
-                <img src="./assets/img/slide/2.jpg" class="item current-item">
-                <img src="./assets/img/slide/3.jpg" class="item current-item">
-                <img src="./assets/img/slide/4.jpg" class="item current-item">
-                <img src="./assets/img/slide/5.jpg" class="item current-item">
-              </div>
-            </div>
-          </div>
-    </section>
     <section class="mapa">
-        <iframe class="mapa-link" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225137.2754642595!2d-48.6739604!3d-28.1534913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaa2734f1ec6062c!2sRenovalar%20Pintor%20em%20Garopaba!5e0!3m2!1spt-BR!2sbr!4v1667408407164!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1 class="mapa__titulo">Regiões Atendidas</h1>
+        <iframe class="mapa__link" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225137.2754642595!2d-48.6739604!3d-28.1534913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaa2734f1ec6062c!2sRenovalar%20Pintor%20em%20Garopaba!5e0!3m2!1spt-BR!2sbr!4v1667408407164!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-
-    <script src="https://kit.fontawesome.com/ca14b9e588.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper',  {
+            spaceBetween: 10,
+            slidesPerView: 2.5,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
 </body>
 </html>
